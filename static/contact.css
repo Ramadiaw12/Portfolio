@@ -1,0 +1,205 @@
+/* PARTIE CONTACT.HTML */
+* {/*forme de la page par defaut*/
+    margin: 0;
+    padding: 0;/**/
+    box-sizing: border-box;/**/
+    font-family: 'Poppins', sans-serif;/**/
+  }
+  body {
+    background: #1f242d; /*couleur de la page */
+  
+  }
+  a {
+    color: #fff;/**/
+    text-decoration: none;/**/
+  }
+  header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* min-height: 100vh; */
+  }
+  .items {
+    display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 20px; /* Espace entre les sections */
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  
+  
+  .navbar {
+    position: fixed;
+    left: 0;/**/
+    top: 0;/**/
+    width: 100%;/**/
+    padding: 25px 9%;/*Espacement à l'interieur de la barre de navigation*/
+    display: flex;/**/
+    justify-content: space-between;/**/
+    align-items: center;/**/
+    z-index: 100;/**/
+    visibility: hidden;/**/
+    opacity: 0;/**/
+    animation: show-content 1.5s linear forwards;/**/
+    animation-delay: 1.2s;/**/
+  }
+  @keyframes show-content {
+    100% {
+      visibility: visible;/**/
+      opacity: 1;/**/
+    }
+  }
+  .navbar .logo {
+    font-size: 30px;/*taille du texte*/
+    font-weight: 700;/**/
+  
+  }
+  .navbar ul {
+    display: flex;/**/
+  
+  }
+  .navbar ul li {
+    list-style: none;/**/
+    margin-left: 35px;/**/
+  }
+  .navbar ul li a {
+    /* list-size: 20px;*/ 
+    font-weight: 500;/**/
+    transition: .5s;/**/
+  }
+  .navbar ul li:hover a,
+  .navbar ul li.active a {/*Pour spécifier Le premier lien du site */
+    color: #7cf03d;/**/
+  }
+  
+  
+  
+  
+  .btn {
+    display: inline-block;/**/
+    padding: 10px 30px;/**/
+    background: #7cf03d;/**/
+    border: 2px solid #7cf03d;/**/
+    border-radius: 40px;/**/
+    box-shadow: 0 0 10px #7cf03d;/**/
+    font-size: 16px;/**/
+    color: #1f242d;/**/
+    font-weight: 600;/**/
+    transition: .5s;/**/
+    align-items: center;
+  }
+  .btn:hover { /*Pseudo class pour survol*/
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+  }
+  .formulaire {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Largeur complète */
+      max-width: 500px; /* Largeur maximale */
+      margin: 10px auto; /* Centrer le formulaire */
+  }
+  
+  .formulaire div {
+      margin-bottom: 15px; /* Espace entre chaque div */
+  }
+  
+  .interior {
+      width: 100%; /* Largeur complète */
+      padding: 20px; /* Espace intérieur */
+      border: 1px solid #ccc; /* Bordure légère */
+      border-radius: 5px; /* Coins arrondis */
+      box-sizing: border-box; /* Inclut le padding dans la largeur */
+      background-color: #1f242d;
+      font-size: 15px;
+  
+  }
+  input {
+    color: white;
+  }
+  .container{
+    color: white;
+    max-width: 500px;
+      margin: 50px auto;
+    padding: 80px;
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px;
+  
+  
+  }
+  div div h1 {
+    color: #7cf03d;/**/;
+    text-align: left;
+  }
+  #contact {
+  /*    background-color:  #1f242d;*/
+      padding: 50px 20px;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 50px;
+  }
+  input, textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+  
+  #contact h3 {
+      color: #7cf03d;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+  }
+  
+  #contact .para {
+      color: white;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1em;
+  }
+  
+  .coordonnees {
+      
+      justify-content: flex-end;    /* Alignement à droite */
+      gap: 10px;
+      margin-top: 30px;
+  }
+  
+  .coordonnees p {
+      background-color: #1f242d;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+  }
+  
+  .coordonnees p:hover {
+      transform: scale(1.05);
+       color: #7cf03d;
+       background: transparent;
+  }
+  
+  .coordonnees a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+  }
+  
+  .coordonnees i {
+      margin-right: 10px;
+      color: #7cf03d;
+      font-size: 1.2em;
+  }
