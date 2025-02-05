@@ -97,6 +97,19 @@
     color: #7cf03d;
     box-shadow: none;
   }
+
+
+  .MONcontact{
+    color: #7cf03d;
+    text-align: center;
+    margin-top: 80px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 100%;
+    border: 20px;
+    
+  }
   .formulaire {
       display: flex;
       flex-direction: column;
@@ -123,30 +136,51 @@
     color: white;
   }
   .container{
-    color: white;
+    
     max-width: 500px;
-      margin: 50px auto;
+    margin: 50px auto;
     padding: 80px;
     font-size: 18px;
     font-family: serif;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px;
+    box-shadow: 0 0px 2px;
+    align-items: center;
+    margin-top: 5%;
   
   
   }
-  div div h1 {
+  .container h1{
+    color: #7cf03d;
+  }
+  .container h4{
+    color: #fff;
+    padding: 15px;
+    padding-left: 0%;
+  }
+  div div h5 {
     color: #7cf03d;/**/;
     text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0%;
   }
   #contact {
   /*    background-color:  #1f242d;*/
-      padding: 50px 20px;
+      padding: 80px;
       text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin: 50px;
+      /* height: 100vh; */
+      max-width: 500px;
+      margin: 50px auto;
+      box-shadow: 0 0px 2px;
+      margin-top: 5%;
+    
+  }
+  .name{
+    color: #fff;
+    text-align: start;
+  }
+  .role{
+    opacity: 0.60;
   }
   input, textarea{
     width: 100%;
@@ -172,7 +206,7 @@
   .coordonnees {
       
       justify-content: flex-end;    /* Alignement à droite */
-      gap: 10px;
+      gap: 40%;
       margin-top: 30px;
   }
   
@@ -180,8 +214,9 @@
       background-color: #1f242d;
       padding: 15px 25px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px white;
       transition: transform 0.3s ease;
+      margin-bottom: 20px;
   }
   
   .coordonnees p:hover {
@@ -203,3 +238,4 @@
       color: #7cf03d;
       font-size: 1.2em;
   }
+  

@@ -1,33 +1,227 @@
-/* PARTIE DU ABOUT ME */
-/* .portfoloo{
+* {/*forme de la page par defaut*/
+    margin: 0;
+    padding: 0;/**/
+    box-sizing: border-box;/**/
+    font-family: 'Poppins', sans-serif;/**/
+  }
+  body {
+    background: #1f242d; /*couleur de la page */
   
-  margin-top: 150px;
+  }
+  a {
+    color: #fff;/**/
+    text-decoration: none;/**/
+  }
+  .navbar {
+    position: fixed;
+    left: 0;/**/
+    top: 0;/**/
+    width: 100%;/**/
+    padding: 25px 9%;/*Espacement à l'interieur de la barre de navigation*/
+    display: flex;/**/
+    justify-content: space-between;/**/
+    align-items: center;/**/
+    z-index: 100;/**/
+    visibility: hidden;/**/
+    opacity: 0;/**/
+    animation: show-content 1.5s linear forwards; 
+    animation-delay: 1.2s;
+  }
+  @keyframes show-content {
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .navbar .logo {
+    font-size: 30px;/*taille du texte*/
+    font-weight: 700;/**/
   
+  }
+  .navbar ul {
+    display: flex;/**/
+  
+  }
+  .navbar ul li {
+    list-style: none;/**/
+    margin-left: 35px;/**/
+  }
+  .navbar ul li a {
+    /* list-size: 20px; */
+    font-weight: 500;/**/
+    transition: .5s;/**/
+  }
+  .navbar ul li:hover a,
+  .navbar ul li.active a {/*Pour spécifier Le premier lien du site */
+    color: #7cf03d;/**/
+  }
+.propos{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+    color: #7cf03d;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
-.portfoloo h1{
-  justify-content: center;
-  text-align: center;
-  color: #7cf03d;
-} */
-.backgroundabout {
+main div{
+    display: flex;
+    flex-direction: column;
+}
+main h3{
+    color: #fff;
+    padding-left: 0%;
+    
+    padding-top: 0%;
+    text-align: start;
+    font-family: sans-serif;
+    margin-top: 0%;
+    justify-content: space-between;
+    line-height: 1.6; 
+}
+
+
+.aboutcontainer{
+    
+    max-width: 1100px;  /* Ajuster la taille du conteneur pour mieux s'adapter */
+    margin: 20px auto;  /* Centrer le conteneur */
+    padding: 20px;  /* Espacement intérieur du conteneur */
+    font-size: 18px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;  /* Par défaut, les éléments s'affichent horizontalement */
+    justify-content: space-between;  /* Espacement entre l'image et le texte */
+    align-items: center;  /* Aligner le texte et l'image au centre verticalement */
+    gap: 90px;  /* Espacement réduit entre l'image et le texte */
+}
+.aboutcontainer p{
+    color: #fff;
+    opacity: 0.30;
+    margin-top: 15px;
+}
+
+
+.education h1{
+    margin-top: 40px;
+    color: #7cf03d;
+    text-align: center;
+
+}
+.container{
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    margin: 190px;
-    align-items: center;
+    gap: 50px;
+    padding: 60px;
+    color: #fff;
     
+}
+.monparcours{
+    margin-top: 20px;
+    text-align: justify;
+}
+.annees{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.lycee{
+  padding: 12px;
+}
+.container h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.30;
+}
+.div-ligne-pointillee {
+    border-bottom: 2px dotted #7cf03d; /* ligne pointillée bleue */
+    margin: 20px 0;  /* Ajouter de l'espace au-dessus et en dessous */
   }
-  .imgabout{
-    width: 100%;
-    height: 40vh;
-    
+  
+  
+.adresschool{
+    padding: 15px;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    opacity: 0.30;
+}
+
+.home-img .img-box {
+    position: relative;/**/
+    width: 32vw;/**/
+    height: 32vw;/**/
+    background: #7cf03d;/**/
+    border-radius: 50%;/**/
+    padding: 5px;/**/
+    display: flex;/**/
+    justify-content: center;/**/
+    align-items: center;/**/
+    overflow: hidden;/**/
   
   }
-  .divabout {
-    border: 8px solid #7cf03d; /* largeur de la bordure, style solide, couleur verte */
-    border-radius: 15px; /* rayon pour arrondir les coins */
+  .home-img .img-box::before
+  .home-img .img-box::after {/*Pseudo-Element*/
+    content: '';/**/
+    position: absolute;/**/
+    width: 500px;/**/
+    height: 500px;/**/
+    background: conic-gradient(transparent, transparent, transparent, #7cf03d);/**/
+    transform: rotate(0deg);/**/
+    animation: rotate-border 10s linear infinite;/**/
   }
-  .divabout:hover{
-    color: #7cf03d;
-    box-shadow: #7cf03d 0px 30px 60px -12px inset, #7cf03d 0px 18px 36px -18px inset;
+  @keyframes rotate-border {
+    100% {
+      transform: rotate(360deg);/**/
+    }
   }
+  .home-img .img-box .img-item {
+    position: relative;/**/
+    width: 100%;/**/
+    height: 100%;/**/
+    background: #1f242d;/**/
+    border-radius: 50%;/**/
+    border: .1px solid #1f242d;/**/
+    display: flex;/**/
+    justify-content: center;/**/
+    z-index: 1;/**/
+    overflow: hidden;/**/
+  
+  }
+  .home-img .img-box .img-item img {
+    position: absolute;/**/
+    top: 15%; /* Centrer verticalement */
+    left: 15%;/**/
+    display: block;/**/
+    object-fit: cover;/**/
+    mix-blend-mode: normal;/**/
+    transform: translate(-15%, -15%);/**/
+    width: 100%; /* Doit être 100% */
+    height: 100%; /* Doit être 100% */
+  
+  }
+  .bars-animation {
+    position: absolute;/**/
+    width: 100%;/**/
+    height: 100%;/**/
+    display: flex;/**/
+    z-index: -1;
+  }
+  .bars-animation .bar {
+    width: 100%;/**/
+    height: 100%;/**/
+    background: #1f242D;
+    transform: translateY(100%);/**/
+    animation: show-bars .5s ease-in-out forwards;/**/
+    animation-delay: calc(.1s * var(--i));/**/
+  }
+  @keyframes show-bars {
+    100% {
+      transform: translate(0%);/**/
+    }
+  }
+  .contact-info {
+    display: none; /* Initialement caché */
+    color: #7cf03d;; /* Texte blanc */
+    /* list-size: 20px; */
+    font-weight: 500;/**/
+    transition: .5s;/* Marge au-dessus */
+  }
+  
